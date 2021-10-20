@@ -40,4 +40,14 @@ contract OldGuys is ERC721, Ownable {
     _setTokenURI(newItemId, uri);
     return newItemId;
   }
+
+  function mintMultiple(address[] memory recipient, string[] memory uri) public returns (bool) {
+    for (uint i = 0; i < recipient.length; i++) {
+      _tokenIds.increment();
+      uint256 newItemId = _tokenIds.current();
+      _mint(recipient[i], newItemId);
+      _setTokenURI(newItemId, uri[i]);
+    }
+    return true;
+  }
 }
