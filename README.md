@@ -24,7 +24,15 @@ npx hardhat compile
 ```
 
 
-Deploy contract
+Deploy contract to various networks
 ```
 npx hardhat run scripts/deploy-contract.js --network matic
+```
+
+```
+npx hardhat run scripts/deploy-contract.js --network rinkeby
+```
+
+```
+npx hardhat run scripts/deploy-contract.js --network eth
 ```
