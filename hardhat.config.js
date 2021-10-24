@@ -26,6 +26,14 @@ module.exports = {
     matic: {
       url: "https://rpc-mumbai.maticvigil.com",
       accounts: [PRIVATE_KEY]
+    },
+    rinkeby: {
+      url: "https://rinkeby-light.eth.linkpool.io",
+      accounts: [PRIVATE_KEY]
+    },
+    eth: {
+      url: "https://main-light.eth.linkpool.io",
+      accounts: [PRIVATE_KEY]
     }
   },
   solidity: {
