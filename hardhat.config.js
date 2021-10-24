@@ -28,11 +28,11 @@ module.exports = {
       accounts: [PRIVATE_KEY]
     },
     rinkeby: {
-      url: "https://rinkeby-light.eth.linkpool.io",
+      url: "https://rinkeby.infura.io/v3/855e8ee0479748caa2d7f7866c433644",
       accounts: [PRIVATE_KEY]
     },
     eth: {
-      url: "https://main-light.eth.linkpool.io",
+      url: "https://mainnet.infura.io/v3/855e8ee0479748caa2d7f7866c433644",
       accounts: [PRIVATE_KEY]
     }
   },
